@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKINGNOW</title>
+
+    <!-- Materialize CSS (Material Design) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles-index.css">
+</head>
+
+<body>
+
+<!-- Botón de Chat flotante -->
+<button id="chatButton" class="btn-floating btn-large waves-effect waves-light yellow darken-1" aria-label="Abrir chat de la plataforma">
+    <i class="material-icons">chat</i>
+</button>
+
+<div id="chatBox" class="card-panel chat-box">
+    <div class="chat-header">
+        <span>Chat</span>
+        <button id="closeChat" class="close-button btn-flat">&times;</button>
+    </div>
+    <div id="chat-container">
+        <div id="messages" class="center-align">How can I help you?</div>
+        <div id="options" class="center">
+            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('Parking availability')">Parking availability</button>
+            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('How to book a space?')">How to book a space?</button>
+            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('Optimal routes for parking')">Optimal routes for parking</button>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="nav-wrapper blue-grey darken-3">
+    <div class="container">
+        <a href="#" class="brand-logo">ParkingNow</a>
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Caracteristicas.html">Features</a></li>
+            <li><a href="#">Reserve Space</a></li>
+            <li><a href="About.html">Contact Us</a></li>
+            <li><a href="Login.html" class="btn yellow darken-1">Log in</a></li>
+            <li><a href="RegisterOptions.html" class="btn yellow darken-2">Register Account</a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Caracteristicas.html">Features</a></li>
+    <li><a href="#">Reserve Space</a></li>
+    <li><a href="About.html">Contact Us</a></li>
+    <li><a href="Login.html" class="btn yellow darken-1">Log in</a></li>
+    <li><a href="RegisterOptions.html" class="btn yellow darken-2">Register Account</a></li>
+</ul>
+
+<!-- Hero Section -->
+<section class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h1 class="header">If you want parking, PARKINGNOW is the solution to your problems</h1>
+                <p class="light">Stop worrying about parking; PARKINGNOW takes care of everything.</p>
+                <a href="Login.html" class="btn-large waves-effect waves-light">Discover PARKINGNOW</a>
+                <p class="sub-text">Thousands of drivers already trust PARKINGNOW to find and reserve their parking spaces.</p>
+            </div>
+            <!-- Imagen Hero -->
+            <div class="col s12 m6">
+                <img src="images/Estacionamiento.jpg" alt="Imagen representativa de PARKINGNOW" class="responsive-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cities Section -->
+<section class="section container">
+    <h2 class="center-align">Cities where you can find PARKINGNOW</h2>
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/Lima.png" alt="Lima">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Lima</span>
+                    <p>The vibrant capital of Peru, known for its rich history, colonial architecture, and vibrant nightlife.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/Arequipa.jpg" alt="Arequipa">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Arequipa</span>
+                    <p>Famous for its white sillar buildings and the majesty of the Misti volcano that surrounds it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/Cuzco.jpg" alt="Cusco">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Cusco</span>
+                    <p>The ancient capital of the Inca Empire, famous for its history and proximity to Machu Picchu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Benefits Section -->
+<section class="benefits-section">
+    <h2>Service Benefits</h2>
+    <div class="benefits-grid">
+        <div class="benefit">
+            <h5>Frequent Urban Drivers</h5>
+            <p>PARKINGNOW provides a seamless parking experience for urban drivers, allowing them to find and reserve spaces in real-time. With our platform, they can save time and reduce the stress associated with searching for parking.</p>
+        </div>
+        <div class="benefit">
+            <h5>Parking Owners</h5>
+            <p>With PARKINGNOW, parking owners can manage their spaces easily and effectively. The platform allows them to monitor availability, set prices, and attract new customers, improving occupancy rates and earnings.</p>
+        </div>
+        <div class="benefit">
+            <h5>Business Integration</h5>
+            <p>PARKINGNOW allows businesses to integrate our services into their platforms, offering an added value to their customers while enhancing customer satisfaction and loyalty by simplifying their operations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Promotions Section -->
+<section class="promotions-section">
+    <h2 class="center-align">Featured Promotions</h2>
+    <div class="promotion-grid container">
+        <div class="promotion" id="promotion-lima">
+            <img src="images/Lima_Descuento.jpg" alt="Promoción en Lima" class="promotion-img">
+            <h3>Promotion in Lima</h3>
+            <p>20% discount on your first reservation!</p>
+        </div>
+        <div class="promotion" id="promotion-arequipa">
+            <img src="images/Arequipa_Descuento.jpg" alt="Promoción en Arequipa" class="promotion-img">
+            <h3>Promotion in Arequipa</h3>
+            <p>Book now and get 15% discount!</p>
+        </div>
+        <div class="promotion" id="promotion-cusco">
+            <img src="images/Cuzco_Descuento.jpg" alt="Promoción en Cusco" class="promotion-img">
+            <h3>Promotion in Cusco</h3>
+            <p>10% discount on all spaces!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Seguridad y Confianza Section -->
+<section class="promotions-section">
+    <h2 style="text-align: center;">Seguridad y confianza</h2>
+    <div class="promotion-grid">
+        <div class="promotion" id="promotion-lima">
+            <img src="images/seguridad_1.jpg" alt="Promoción en Lima" class="promotion-img">
+            <h3>Una aplicación que te respalda</h3>
+            <p>Pensamos en ti y en tus necesidades, tu seguridad es lo primero. Nos comprometemos en brindar una experiencia segura.</p>
+        </div>
+        <div class="promotion" id="promotion-arequipa">
+            <img src="images/monitoreo_landing.jpg" alt="Promoción en Arequipa" class="promotion-img">
+            <h3>Monitoreo en tiempo real</h3>
+            <p>Gracias a nuestros monitoreos por sensores, podrás ver que tu vehículo sigue donde lo aparcaste.</p>
+        </div>
+        <div class="promotion" id="promotion-cusco">
+            <img src="images/confianza_mutua.jpg" alt="Promoción en Cusco" class="promotion-img">
+            <h3>Tu lugar, tu elección</h3>
+            <p>Observa las opiniones de los clientes y las playas para ver dónde te quedas y a quién le prestas servicios.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-content">
+        <p class="cta-title">
+            DO YOU HAVE A PARKING LOT<br>AND WANT TO MAKE MONEY?
+        </p>
+        <p class="cta-subtitle">
+            With PARKINGNOW, you can make money by renting out your parking space.
+        </p>
+        <!-- Imagen mejorada con clases adicionales -->
+        <div class="cta-banner-wrapper">
+            <img src="images/Estacionamientos.jpg" alt="cta-banner" class="cta-banner">
+        </div>
+        <button class="cta-button" aria-label="Send to Login">
+            <a href="Login.html" aria-label="Go to the registration page">
+                Start Now
+            </a>
+        </button>
+    </div>
+</section>
+
+
+<!-- Register Section -->
+<section class="register_p">
+    <div class="container_r">
+        <p class="cta-title">
+            IF YOU WANT TO START WITH PARKINGNOW, REGISTER AS:
+        </p>
+        <div class="register-form">
+            <a href="DriverRegister.html" class="Choose1" aria-label="Go to the driver registration page">
+                <div class="option">
+                    <div class="circle">
+                        <img src="images/Conductor.jpg" alt="Driver" class="CircleImg">
+                    </div>
+                    <h2>Driver</h2>
+                    <p class="ptex">Register as a driver to have access to information <br> about all parking lots throughout the city.</p>
+                </div>
+            </a>
+            <a href="PlayaRegister.html" class="Choose2" aria-label="Go to the parking lot owner registration page">
+                <div class="option">
+                    <div class="circle">
+                        <img src="images/EstacionamientoP.jpg" alt="Parking Lot" class="CircleImg">
+                    </div>
+                    <h2>Parking Lot</h2>
+                    <p class="ptex">Register as a business to facilitate the management of <br> the spaces you offer and speed up payments.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="page-footer blue-grey darken-3">
+    <div class="container">
+        <div class="row">
+            <!-- Contenido a la izquierda -->
+            <div class="col l6 s12" style="text-align: left;">
+                <h5 class="white-text">ParkingNow</h5>
+                <p class="grey-text text-lighten-4">Simplifying the parking experience in your city.</p>
+            </div>
+            
+            <!-- Enlaces a la derecha -->
+            <div class="col l4 offset-l2 s12" style="text-align: right;">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a href="About.html" class="grey-text text-lighten-3">About</a></li>
+                    <li><a href="Caracteristicas.html" class="grey-text text-lighten-3">Features</a></li>
+                    <li><a href="Contact.html" class="grey-text text-lighten-3">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container" style="text-align: center;">
+            © 2024 PARKINGNOW. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    // Toggle chatbox visibility
+    const chatButton = document.getElementById('chatButton');
+    const chatBox = document.getElementById('chatBox');
+    const closeChat = document.getElementById('closeChat');
+
+    chatButton.addEventListener('click', () => {
+        chatBox.classList.toggle('show');
+    });
+
+    closeChat.addEventListener('click', () => {
+        chatBox.classList.remove('show');
+    });
+</script>
+
+</body>
+
+</html>

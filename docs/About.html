@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKINGNOW - About & Contact</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/styles-about.css">
+</head>
+
+<body>
+
+<!-- Toolbar -->
+<div class="navbar">
+    <div class="logo">
+        <a href="#"><img src="images/parkingnow.png" alt="PARKINGNOW"></a>
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="Caracteristicas.html">Features</a>
+        <a href="#">Reserve Space</a>
+        <a href="About.html">Contact Us</a>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<section class="locations-section">
+    <h1>Our Team</h1>
+
+    <!-- Team Members -->
+    <div class="locations-grid" aria-label="Team members">
+        <div>
+            <img src="images/Diego.jpg" alt="Diego Soto" class="location-image">
+            <p class="location-text">Diego Ulises Soto Quispe</p>
+            <p class="location-description">I am a 5th-cycle student in the Software Engineering program. I am responsible in the tasks assigned to me and punctual with deadlines. Outside of programming, I enjoy playing basketball, going for walks, playing video games, and riding my bike.</p>
+        </div>
+        <div>
+            <img src="images/Diego_C.jpg" alt="Diego Cacho" class="location-image">
+            <p class="location-text">Diego Alonso Cacho Seminario</p>
+            <p class="location-description">My name is Diego Cacho, and I am 19 years old. I am currently in the 5th cycle of my Software Engineering career at UPC. I consider myself a calm and diligent person; I try to complete my tasks and assignments as soon as possible to avoid future setbacks, especially for time-consuming activities. As a team member, I will seek to help my colleagues whenever they need it, and I will also make my submissions as early as possible.</p>
+        </div>
+        <div>
+            <img src="images/Omar.jpeg" alt="Omar Rivera" class="location-image">
+            <p class="location-text">Omar Harold Rivera Ticllacuri</p>
+            <p class="location-description">I am a Software Engineering student, 19 years old, currently in the fifth cycle of my career. I am a disciplined and responsible person when it comes to developing software and entertainment projects. I have experience in entertainment software development. Therefore, I will support the group in every possible way to adequately develop the work and proposal assigned to us.</p>
+        </div>
+    </div>
+</section>
+<section class="locations-section">
+    <div class="locations-grid" aria-label="Additional Team members">
+        <div>
+            <img src="images/Samuel.jpeg" alt="Samuel Elias Molina Asencios" class="location-image">
+            <p class="location-text">Samuel Elias Molina Asencios</p>
+            <p class="location-description">I am a 7th-cycle student in the Software Engineering program. I am currently part of a development team, taking on the role of Software Analyst Developer. I really enjoy art and sports. In my free time, I play the piano or go swimming; there's nothing better than swimming.</p>
+        </div>
+        <div>
+            <img src="images/Rodrigo.png" alt="Rodrigo Liberato Saldaña" class="location-image">
+            <p class="location-text">Rodrigo Liberato Saldaña</p>
+            <p class="location-description">I am a 6th-cycle student in the Software Engineering program. I am a person who values effort and tries to support in every possible way. Responsibility and honesty are some of my qualities, and they will be helpful to ensure that the work is done as well as possible.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="contact-section" id="contact" aria-labelledby="contactTitle">
+    <h2 id="contactTitle">Contact Us</h2>
+    <form class="contact-form" aria-label="Contact form" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required aria-required="true">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message" required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" aria-label="Send Message">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section" aria-label="Footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/parkingnow.png" alt="PARKINGNOW logo">
+        </div>
+        <div class="footer-menu">
+            <a href="About.html" class="hover">About</a>
+            <a href="Caracteristicas.html" class="hover">Features</a>
+            <a href="Contact.html" class="hover">Contact</a>
+        </div>
+    </div>
+    <div class="footer-bottom" aria-label="Copyright Information">
+        &copy; 2024 PARKINGNOW. All rights reserved.
+    </div>
+</footer>
+
+</body>
+
+</html>
