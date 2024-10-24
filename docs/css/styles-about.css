@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-h1, h2 {
+h1, h2 {font-family: Kalam, serif;
     text-align: center;
     margin-bottom: 40px;
     color: #2a2a2a;
@@ -78,9 +78,10 @@ img {
 .location-text {
     font-weight: bold;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     color: #2a2a2a;
+    font-family: Kalam, serif;
 }
 
 .location-description {
