@@ -69,13 +69,24 @@ img {
     height: auto;
 }
 
-/* Mejoras para las secciones de contenido */
-.container1, .container2 {
+.container1
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
+    background: linear-gradient(to right, #363c48, #5f687c);
+}
+
+/* Mejoras para las secciones de contenido */
+ .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas más pequeñas */
+    background: #2f3640;
 }
 
 .content, .content2 {
