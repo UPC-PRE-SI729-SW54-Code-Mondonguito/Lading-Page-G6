@@ -1,17 +1,34 @@
 body {
-    font-family: 'Tinos', serif;
-}
+    background-color: #ffffff;
+    font-family: "Tinos", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
 
 nav {
-    padding: 0 20px;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
 
+}
+.NT{
+    font-family: Kalam, serif;
+}
 /* Hero Section */
 #index-banner {
-    background-color: #2a2a2a;
+    background-color: #2D333F;
     padding: 100px 0;
     color: white;
 }
+
+.ParkingNow_Logo {
+
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
 
 #index-banner h1 {
     font-family: 'Kalam', cursive;
@@ -47,7 +64,7 @@ nav {
 
 /* Service Benefits Section */
 .benefits-section {
-    background-color: #9c9b0e;
+    background-color: #e8db6c;
     padding: 50px 0;
 }
 
@@ -55,15 +72,18 @@ nav {
     text-align: center;
     color: #fff;
     font-family: 'Kalam', cursive;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
 }
 
 .benefits-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
 
+}
+.sidenav li a{
+    font-family: Kalam,serif;
+}
 .benefit {
     background-color: #2a2a2a;
     color: #fff;
@@ -71,7 +91,7 @@ nav {
     border-radius: 10px;
     margin: 20px;
     flex: 1;
-    max-width: 300px;
+    max-width: 400px;
     transition: transform 0.3s;
 }
 
@@ -87,7 +107,7 @@ nav {
 }
 
 .promotion {
-    background-color: #f5f5f5;
+    background-color: rgba(232, 252, 114, 0.56);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -95,6 +115,22 @@ nav {
     margin-bottom: 20px;
     transition: transform 0.3s;
 }
+.promotion2 {
+    font-family: Kalam, serif;
+    background-color: rgba(255, 198, 45, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: start;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    color: white;
+}
+.promotion2 p{
+    font-family: Tinos, serif;
+    color: white;
+}
+
 
 .promotion:hover {
     transform: scale(1.05);
@@ -110,13 +146,16 @@ nav {
 /* CTA Section */
 .cta-section {
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/Estacionamientos.jpg') no-repeat center center/cover;
-    padding: 100px 0;
+    background-color: #000000;
+    padding:  60px 0;
     color: white;
     text-align: center;
+    font-family: Kalam,serif;
 }
 
 .cta-title {
+    font-family: Kalam, serif;
+    color: white;
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -125,24 +164,28 @@ nav {
     font-size: 1.5rem;
     margin-bottom: 40px;
 }
-
+.promotion h3{
+    font-family: Kalam, serif;
+}
 .cta-button {
     background-color: #ffeb3b;
     color: #2a2a2a;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #fdd835;
+    background-color: #d5b527;
 }
 
 .cta-button a {
     color: #2a2a2a;
     text-decoration: none;
+    font-family: Kalam,serif;
+
 }
 
 /* Imagen dentro de la CTA mejorada */
@@ -165,29 +208,185 @@ nav {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
+
 /* Register Section */
+.register_p {
+    font-family: "Tinos", serif;
+    opacity: 1;
+    background-size: 32px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #363c48, #5f687c);
+}
+
 .container_r {
+    background-color: #000000;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    max-width: 1600px;
+    height: auto;
+}
+.center-align{
+ font-family: Kalam,serif;
+    text-shadow: #333333 6px 6px 20px;
+}
+.btn-large waves-effect waves-light{
+    border-radius: 6px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.card-title{
+    font-family: Kalam, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.card-title p{
+    font-family: Tinos,serif;
+}
+.card:hover{
+    transition: 0.3s;
+    width: 103%;
+    height: 103%;
+}
+.option {
     text-align: center;
-    margin-top: 50px;
+    padding: 0;
+    flex: 1;
+    margin: 10px 30px;
+}
+
+.Choose1 {
+    background-color: #cff1ff;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 20px;
+
+}
+
+.Choose1:hover {
+    background-color: #9fd7ff;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.Choose2 {
+    background-color: #fffbcf;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 20px;
+    height: 120%;
+}
+
+.Choose2:hover {
+    background-color: #ffef9f;
+    color: white;
+    border-radius: 30px;
+}
+
+.LogoInicio {
+    top: 5%;
+    left: 4%;
+    position: absolute;
+    width: 8%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.option h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.option p {
+    font-size: 0.9em;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.Register {
+    font-family: "Kalam", cursive;
+}
+
+.register-box {
+    display: flex;
+    width: 100%;
 }
 
 .register-form {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.option {
-    text-align: center;
-    padding: 20px;
+    background-color: white;
+    padding: 30px;
     border-radius: 10px;
-    transition: box-shadow 0.3s;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
 }
 
-.option:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.register-form h1 {
+    font-size: 3.5em;
+    margin: 0;
 }
+
+.register-form h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.register-form p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.register-form a {
+    color: #5e3fd6;
+    text-decoration: none;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.CircleImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.option p {
+    font-size: 0.9em;
+    color: #8f8f8f;
+    line-height: 1.5em;
+    transition: 0.3s;
+}
+
 
 .circle {
     width: 150px;
