@@ -1,0 +1,247 @@
+/* Materialize CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+
+/* General Styles */
+body {
+    font-family: 'Tinos', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2 {font-family: Kalam, serif;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar - Centrado */
+.navbar {
+    background-color: #2a2a2a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.navbar .brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Transición suave en el hover */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #ffeb3b; /* Efecto hover */
+}
+
+.navbar .logo img {
+    max-height: 50px;
+}
+
+/* Sección del Equipo */
+.locations-section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.locations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar todo el contenido */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #2a2a2a;
+    font-family: Kalam, serif;
+}
+
+.location-description {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.location-image {
+    display: block; /* Asegurar que la imagen es un bloque centrado */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    width: 220px; /* Hacer las imágenes un poco más grandes */
+    height: 220px;
+    transition: transform 0.3s ease; /* Transición suave al hover */
+}
+
+.location:hover .location-image {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Animación en el borde */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffeb3b; /* Color en foco */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
+
+.footer-menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+    color: #ffeb3b; /* Efecto hover */
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Ajuste para las imágenes grandes */
+.bannerInfo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .locations-grid {
+        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .location-image {
+        width: 180px; /* Tamaño ajustado para pantallas pequeñas */
+        height: 180px;
+    }
+}
