@@ -28,15 +28,15 @@
 
 <div id="chatBox" class="card-panel chat-box">
     <div class="chat-header">
-        <span>Chat</span>
+        <span data-i18n="chatTitle">Chat</span>
         <button id="closeChat" class="close-button btn-flat">&times;</button>
     </div>
     <div id="chat-container">
-        <div id="messages" class="center-align">How can I help you?</div>
+        <div id="messages" class="center-align" data-i18n="chatHelp">How can I help you?</div>
         <div id="options" class="center">
-            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('Parking availability')">Parking availability</button>
-            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('How to book a space?')">How to book a space?</button>
-            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('Optimal routes for parking')">Optimal routes for parking</button>
+            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('parkingAvailability')" data-i18n="parkingAvailability">Parking availability</button>
+            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('howToBook')" data-i18n="howToBook">How to book a space?</button>
+            <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('optimalRoutes')" data-i18n="optimalRoutes">Optimal routes for parking</button>
         </div>
     </div>
 </div>
@@ -47,22 +47,27 @@
         <a href="#" class="brand-logo" style="font-family: Kalam, serif;">ParkingNow</a>
         <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a class="NT" href="index.html">Home</a></li>
-            <li><a class="NT" href="Caracteristicas.html">Features</a></li>
-            <li><a class="NT" href="#">Reserve Space</a></li>
-            <li><a class="NT" href="About.html">Contact Us</a></li>
-            <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-1" style="font-family: Kalam, serif;">Log in</a></li>
-            <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-2" style="font-family: Kalam, serif;">Register Account</a></li>
+            <li><a class="NT" href="index.html" data-i18n="home">Home</a></li>
+            <li><a class="NT" href="Caracteristicas.html" data-i18n="features">Features</a></li>
+            <li><a class="NT" href="#" data-i18n="reserveSpace">Reserve Space</a></li>
+            <li><a class="NT" href="About.html" data-i18n="contactUs">Contact Us</a></li>
+            <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-1" style="font-family: Kalam, serif;" data-i18n="login">Log in</a></li>
+            <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-2" style="font-family: Kalam, serif;" data-i18n="registerAccount">Register Account</a></li>
+            <!-- Language Switcher Button -->
+            <li>
+                <button id="languageSwitcher" class="btn grey darken-3 white-text" style="margin-left: 15px;">Español</button>
+            </li>
         </ul>
     </div>
 </nav>
+
 <ul class="sidenav" id="mobile-menu">
-    <li><a href="index.html" class="NT">Home</a></li>
-    <li><a href="Caracteristicas.html" class="NT">Features</a></li>
-    <li><a href="#" class="NT">Reserve Space</a></li>
-    <li><a href="About.html" class="NT">Contact Us</a></li>
-    <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-1">Log in</a></li>
-    <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-2">Register Account</a></li>
+    <li><a href="index.html" class="NT" data-i18n="home">Home</a></li>
+    <li><a href="Caracteristicas.html" class="NT" data-i18n="features">Features</a></li>
+    <li><a href="#" class="NT" data-i18n="reserveSpace">Reserve Space</a></li>
+    <li><a href="About.html" class="NT" data-i18n="contactUs">Contact Us</a></li>
+    <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-1" data-i18n="login">Log in</a></li>
+    <li><a href="https://parkingnow-14273.web.app" class="btn yellow darken-2" data-i18n="registerAccount">Register Account</a></li>
 </ul>
 
 <!-- Hero Section -->
@@ -70,10 +75,10 @@
     <div class="container">
         <div class="row">
             <div class="col s12 m6">
-                <h1 class="header">If you want parking, PARKINGNOW is the solution to your problems</h1>
-                <p class="light">Stop worrying about parking; PARKINGNOW takes care of everything.</p>
-                <a href="https://parkingnow-14273.web.app" class="btn-large waves-effect waves-light">Discover PARKINGNOW</a>
-                <p class="sub-text">Thousands of drivers already trust PARKINGNOW to find and reserve their parking spaces.</p>
+                <h1 class="header" data-i18n="welcome">If you want parking, PARKINGNOW is the solution to your problems</h1>
+                <p class="light" data-i18n="intro">Stop worrying about parking; PARKINGNOW takes care of everything.</p>
+                <a href="https://parkingnow-14273.web.app" class="btn-large waves-effect waves-light" data-i18n="discover">Discover PARKINGNOW</a>
+                <p class="sub-text" data-i18n="subText">Thousands of drivers already trust PARKINGNOW to find and reserve their parking spaces.</p>
             </div>
             <div class="col s12 m6">
                 <img src="images/Estacionamiento.jpg" alt="Representative image of PARKINGNOW" class="responsive-img">
@@ -84,7 +89,7 @@
 
 <!-- Cities Section -->
 <section class="section container">
-    <h2 class="center-align">Cities where you can find PARKINGNOW</h2>
+    <h2 class="center-align" data-i18n="citiesTitle">Cities where you can find PARKINGNOW</h2>
     <div class="row">
         <div class="col s12 m4">
             <div class="card">
@@ -92,8 +97,8 @@
                     <img src="images/Lima.png" alt="Lima">
                 </div>
                 <div class="card-content">
-                    <span class="card-title">Lima</span>
-                    <p>The vibrant capital of Peru, known for its rich history, colonial architecture, and vibrant nightlife.</p>
+                    <span class="card-title" data-i18n="cityLimaTitle">Lima</span>
+                    <p data-i18n="cityLimaDesc">The vibrant capital of Peru, known for its rich history, colonial architecture, and vibrant nightlife.</p>
                 </div>
             </div>
         </div>
@@ -103,8 +108,8 @@
                     <img src="images/Arequipa.jpg" alt="Arequipa">
                 </div>
                 <div class="card-content">
-                    <span class="card-title">Arequipa</span>
-                    <p>Famous for its white sillar buildings and the majesty of the Misti volcano that surrounds it.</p>
+                    <span class="card-title" data-i18n="cityArequipaTitle">Arequipa</span>
+                    <p data-i18n="cityArequipaDesc">Famous for its white sillar buildings and the majesty of the Misti volcano that surrounds it.</p>
                 </div>
             </div>
         </div>
@@ -114,8 +119,8 @@
                     <img src="images/Cuzco.jpg" alt="Cusco">
                 </div>
                 <div class="card-content">
-                    <span class="card-title">Cusco</span>
-                    <p>The ancient capital of the Inca Empire, famous for its history and proximity to Machu Picchu.</p>
+                    <span class="card-title" data-i18n="cityCuscoTitle">Cusco</span>
+                    <p data-i18n="cityCuscoDesc">The ancient capital of the Inca Empire, famous for its history and proximity to Machu Picchu.</p>
                 </div>
             </div>
         </div>
@@ -124,63 +129,63 @@
 
 <!-- Service Benefits Section -->
 <section class="benefits-section">
-    <h2>Service Benefits</h2>
+    <h2 data-i18n="benefitsTitle">Service Benefits</h2>
     <div class="benefits-grid">
         <div class="benefit">
-            <h5>Frequent Urban Drivers</h5>
-            <p>PARKINGNOW provides a seamless parking experience for urban drivers, allowing them to find and reserve spaces in real-time. With our platform, they can save time and reduce the stress associated with searching for parking.</p>
+            <h5 data-i18n="benefitDriversTitle">Frequent Urban Drivers</h5>
+            <p data-i18n="benefitDriversDesc">PARKINGNOW provides a seamless parking experience for urban drivers, allowing them to find and reserve spaces in real-time. With our platform, they can save time and reduce the stress associated with searching for parking.</p>
         </div>
         <div class="benefit">
-            <h5>Parking Owners</h5>
-            <p>With PARKINGNOW, parking owners can manage their spaces easily and effectively. The platform allows them to monitor availability, set prices, and attract new customers, improving occupancy rates and earnings.</p>
+            <h5 data-i18n="benefitOwnersTitle">Parking Owners</h5>
+            <p data-i18n="benefitOwnersDesc">With PARKINGNOW, parking owners can manage their spaces easily and effectively. The platform allows them to monitor availability, set prices, and attract new customers, improving occupancy rates and earnings.</p>
         </div>
         <div class="benefit">
-            <h5>Business Integration</h5>
-            <p>PARKINGNOW allows businesses to integrate our services into their platforms, offering added value to their customers while enhancing customer satisfaction and loyalty by simplifying their operations.</p>
+            <h5 data-i18n="benefitBusinessTitle">Business Integration</h5>
+            <p data-i18n="benefitBusinessDesc">PARKINGNOW allows businesses to integrate our services into their platforms, offering added value to their customers while enhancing customer satisfaction and loyalty by simplifying their operations.</p>
         </div>
     </div>
 </section>
 
 <!-- Promotions Section -->
 <section class="promotions-section">
-    <h2 class="center-align">Featured Promotions</h2>
+    <h2 class="center-align" data-i18n="promotionsTitle">Featured Promotions</h2>
     <div class="promotion-grid container">
         <div class="promotion" id="promotion-lima">
             <img src="images/Lima_Descuento.jpg" alt="Promotion in Lima" class="promotion-img">
-            <h3>Promotion in Lima</h3>
-            <p>20% discount on your first reservation!</p>
+            <h3 data-i18n="promotionLimaTitle">Promotion in Lima</h3>
+            <p data-i18n="promotionLimaDesc">20% discount on your first reservation!</p>
         </div>
         <div class="promotion" id="promotion-arequipa">
             <img src="images/Arequipa_Descuento.jpg" alt="Promotion in Arequipa" class="promotion-img">
-            <h3>Promotion in Arequipa</h3>
-            <p>Book now and get 15% discount!</p>
+            <h3 data-i18n="promotionArequipaTitle">Promotion in Arequipa</h3>
+            <p data-i18n="promotionArequipaDesc">Book now and get 15% discount!</p>
         </div>
         <div class="promotion" id="promotion-cusco">
             <img src="images/Cuzco_Descuento.jpg" alt="Promotion in Cusco" class="promotion-img">
-            <h3>Promotion in Cusco</h3>
-            <p>10% discount on all spaces!</p>
+            <h3 data-i18n="promotionCuscoTitle">Promotion in Cusco</h3>
+            <p data-i18n="promotionCuscoDesc">10% discount on all spaces!</p>
         </div>
     </div>
 </section>
 
 <!-- Safety and Trust Section -->
 <section class="promotions-section">
-    <h2 style="text-align: center; font-family: Kalam, serif;">Safety and Trust</h2>
+    <h2 style="text-align: center; font-family: Kalam, serif;" data-i18n="safetyTitle">Safety and Trust</h2>
     <div class="promotion-grid">
         <div class="promotion2" id="promotion-lima">
             <img src="images/seguridad_1.jpg" alt="Safety Promotion" class="promotion-img">
-            <h3>An App That Has Your Back</h3>
-            <p>We think of you and your needs; your safety is our priority. We are committed to providing a secure experience.</p>
+            <h3 data-i18n="safetySubtitle1">An App That Has Your Back</h3>
+            <p data-i18n="safetyDesc1">We think of you and your needs; your safety is our priority. We are committed to providing a secure experience.</p>
         </div>
         <div class="promotion2" id="promotion-arequipa">
             <img src="images/monitoreo_landing.jpg" alt="Real-Time Monitoring" class="promotion-img">
-            <h3>Real-Time Monitoring</h3>
-            <p>With our sensor-based monitoring, you can check that your vehicle remains where you parked it.</p>
+            <h3 data-i18n="safetySubtitle2">Real-Time Monitoring</h3>
+            <p data-i18n="safetyDesc2">With our sensor-based monitoring, you can check that your vehicle remains where you parked it.</p>
         </div>
         <div class="promotion2" id="promotion-cusco">
             <img src="images/confianza_mutua.jpg" alt="Your Choice" class="promotion-img">
-            <h3>Your Place, Your Choice</h3>
-            <p>View customer reviews and parking spots to see where you'll stay and whom you trust with your vehicle.</p>
+            <h3 data-i18n="safetySubtitle3">Your Place, Your Choice</h3>
+            <p data-i18n="safetyDesc3">View customer reviews and parking spots to see where you'll stay and whom you trust with your vehicle.</p>
         </div>
     </div>
 </section>
@@ -188,19 +193,13 @@
 <!-- CTA Section -->
 <section class="cta-section">
     <div class="cta-content">
-        <p class="cta-title">
-            DO YOU HAVE A PARKING LOT<br>AND WANT TO MAKE MONEY?
-        </p>
-        <p class="cta-subtitle">
-            With PARKINGNOW, you can make money by renting out your parking space.
-        </p>
+        <p class="cta-title" data-i18n="ctaTitle">DO YOU HAVE A PARKING LOT AND WANT TO MAKE MONEY?</p>
+        <p class="cta-subtitle" data-i18n="ctaSubtitle">With PARKINGNOW, you can make money by renting out your parking space.</p>
         <div class="cta-banner-wrapper">
             <img src="images/Estacionamientos.jpg" alt="cta-banner" class="cta-banner">
         </div>
         <button class="cta-button" aria-label="Send to Login">
-            <a href="https://parkingnow-14273.web.app" aria-label="Go to the registration page">
-                Start Now
-            </a>
+            <a href="https://parkingnow-14273.web.app" aria-label="Go to the registration page" data-i18n="ctaButton">Start Now</a>
         </button>
     </div>
 </section>
@@ -208,17 +207,15 @@
 <!-- Register Section -->
 <section class="register_p">
     <div class="container_r">
-        <p class="cta-title">
-            IF YOU WANT TO START WITH PARKINGNOW, REGISTER AS:
-        </p>
+        <p class="cta-title" data-i18n="registerTitle">IF YOU WANT TO START WITH PARKINGNOW, REGISTER AS:</p>
         <div class="register-form">
             <a href="https://parkingnow-14273.web.app" class="Choose1" aria-label="Go to the driver registration page">
                 <div class="option">
                     <div class="circle">
                         <img src="images/Conductor.jpg" alt="Driver" class="CircleImg">
                     </div>
-                    <h2>Driver</h2>
-                    <p class="ptex">Register as a driver to have access to information <br> about all parking lots throughout the city.</p>
+                    <h2 data-i18n="driver">Driver</h2>
+                    <p class="ptex" data-i18n="driverDesc">Register as a driver to have access to information about all parking lots throughout the city.</p>
                 </div>
             </a>
             <a href="https://parkingnow-14273.web.app" class="Choose2" aria-label="Go to the parking lot owner registration page">
@@ -226,8 +223,8 @@
                     <div class="circle">
                         <img src="images/EstacionamientoP.jpg" alt="Parking Lot" class="CircleImg">
                     </div>
-                    <h2>Parking Lot</h2>
-                    <p class="ptex">Register as a business to facilitate the management of <br> the spaces you offer and speed up payments.</p>
+                    <h2 data-i18n="parkingLot">Parking Lot</h2>
+                    <p class="ptex" data-i18n="parkingLotDesc">Register as a business to facilitate the management of the spaces you offer and speed up payments.</p>
                 </div>
             </a>
         </div>
@@ -236,7 +233,7 @@
 
 <!-- Videos Section -->
 <section class="videos-section">
-    <h2 class="center-align" style="color: #ffeb3b;">Videos</h2>
+    <h2 class="center-align" style="color: #ffeb3b;" data-i18n="videosTitle">Videos</h2>
     <div class="row">
         <div class="col s12 m6 center-align">
             <div class="video-container">
@@ -244,7 +241,7 @@
                     <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_FOR_TEAM/hqdefault.jpg" alt="About the Team" class="responsive-img">
                     <span class="youtube-icon"><i class="material-icons">play_circle_filled</i></span>
                 </a>
-                <p>About the Team</p>
+                <p data-i18n="videoTeam">About the Team</p>
             </div>
         </div>
         <div class="col s12 m6 center-align">
@@ -253,7 +250,7 @@
                     <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_FOR_PRODUCT/hqdefault.jpg" alt="About the Product" class="responsive-img">
                     <span class="youtube-icon"><i class="material-icons">play_circle_filled</i></span>
                 </a>
-                <p>About the Product</p>
+                <p data-i18n="videoProduct">About the Product</p>
             </div>
         </div>
     </div>
@@ -266,15 +263,15 @@
             <!-- Left Content -->
             <div class="col l6 s12" style="text-align: left;">
                 <h5 class="white-text" style="font-family: Kalam, serif;">ParkingNow</h5>
-                <p class="grey-text text-lighten-4">Simplifying the parking experience in your city.</p>
+                <p class="grey-text text-lighten-4" data-i18n="footerAbout">Simplifying the parking experience in your city.</p>
             </div>
 
             <!-- Right Links -->
             <div class="col l4 offset-l2 s12" style="text-align: right;">
-                <h5 class="white-text" style="font-family: Kalam, serif;">Links</h5>
+                <h5 class="white-text" style="font-family: Kalam, serif;" data-i18n="footerLinks">Links</h5>
                 <ul>
-                    <li><a href="About.html" class="grey-text text-lighten-3">About</a></li>
-                    <li><a href="Caracteristicas.html" class="grey-text text-lighten-3">Features</a></li>
+                    <li><a href="About.html" class="grey-text text-lighten-3" data-i18n="footerAboutLink">About</a></li>
+                    <li><a href="Caracteristicas.html" class="grey-text text-lighten-3" data-i18n="footerFeaturesLink">Features</a></li>
                 </ul>
             </div>
         </div>
@@ -282,7 +279,7 @@
 
     <!-- GitHub Icon Button -->
     <div class="footer-social" style="text-align: center; margin-top: 10px;">
-        <p>Find us on:</p>
+        <p data-i18n="footerSocial">Find us on:</p>
         <a href="https://github.com/UPC-PRE-SI729-SW54-Code-Mondonguito" target="_blank" aria-label="Visit our GitHub repository">
             <button class="Btn">
                 <span class="svgContainer">
@@ -294,7 +291,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container" style="text-align: center;">
-            © 2024 PARKINGNOW. All rights reserved.
+            <p data-i18n="footerRights">© 2024 PARKINGNOW. All rights reserved.</p>
         </div>
     </div>
 </footer>
@@ -315,6 +312,31 @@
 
     closeChat.addEventListener('click', () => {
         chatBox.classList.remove('show');
+    });
+
+    // Language Switcher Functionality
+    let currentLanguage = "en";
+
+    async function loadLanguage(lang) {
+        const response = await fetch(`i18n/${lang}.json`);
+        const translations = await response.json();
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+            const key = element.getAttribute("data-i18n");
+            element.innerText = translations[key] || key;
+        });
+
+        // Update button text based on language
+        document.getElementById("languageSwitcher").innerText = lang === "en" ? "Español" : "English";
+    }
+
+    document.getElementById("languageSwitcher").addEventListener("click", () => {
+        currentLanguage = currentLanguage === "en" ? "es" : "en";
+        loadLanguage(currentLanguage);
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        loadLanguage(currentLanguage);
     });
 </script>
 
