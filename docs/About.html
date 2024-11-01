@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARKINGNOW - About & Contact</title>
+    <title>PARKINGNOW - Acerca de y Contacto</title>
 
-        <!-- Favicon -->
-        <link rel="icon" href="images/parkingnow.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="icon" href="images/parkingnow.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,17 +28,20 @@
         <a href="#"><img src="images/parkingnow.png" alt="PARKINGNOW"></a>
     </div>
     <div>
-        <a href="index.html">Home</a>
-        <a href="Caracteristicas.html">Features</a>
-        <a href="#">Reserve Space</a>
-        <a href="About.html">Contact Us</a>
+        <a href="index.html" id="toolbarHome">Inicio</a>
+        <a href="Caracteristicas.html" id="toolbarFeatures">Características</a>
+        <a href="#" id="toolbarReserveSpace">Reservar Espacio</a>
+        <a href="About.html" id="toolbarContactUs">Contáctanos</a>
+    </div>
+    <!-- Language Switcher Button -->
+    <div>
+        <button id="languageSwitcher" class="btn grey darken-3 white-text" style="margin-left: 15px;">English</button>
     </div>
 </div>
 
 <!-- About Us Section -->
-<!-- About Us Section -->
 <section class="locations-section">
-    <h1>Our Team</h1>
+    <h1 id="aboutTitle">Nuestro Equipo</h1>
 
     <!-- Team Members -->
     <div class="locations-grid mdl-grid" aria-label="Team members">
@@ -48,10 +51,10 @@
                     <img src="images/Diego.jpg" alt="Diego Soto" style="width: 100%;">
                 </div>
                 <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Diego Ulises Soto Quispe</h2>
+                    <h2 class="mdl-card__title-text" id="teamMember1Name">Diego Ulises Soto Quispe</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    I am a 5th-cycle student in the Software Engineering program. I am responsible in the tasks assigned to me and punctual with deadlines. Outside of programming, I enjoy playing basketball, going for walks, playing video games, and riding my bike.
+                <div class="mdl-card__supporting-text" id="teamMember1Desc">
+                    Soy estudiante de 5to ciclo en el programa de Ingeniería de Software. Soy responsable en las tareas que se me asignan y puntual con los plazos. Fuera de la programación, disfruto jugar baloncesto, salir a caminar, jugar videojuegos y andar en bicicleta.
                 </div>
             </div>
         </div>
@@ -61,10 +64,10 @@
                     <img src="images/Diego_C.jpg" alt="Diego Cacho" style="width: 100%;">
                 </div>
                 <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Diego Alonso Cacho Seminario</h2>
+                    <h2 class="mdl-card__title-text" id="teamMember2Name">Diego Alonso Cacho Seminario</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    My name is Diego Cacho, and I am 19 years old. I am currently in the 5th cycle of my Software Engineering career at UPC. I consider myself a calm and diligent person.
+                <div class="mdl-card__supporting-text" id="teamMember2Desc">
+                    Me llamo Diego Cacho y tengo 19 años. Actualmente estoy en el 5to ciclo de mi carrera de Ingeniería de Software en la UPC. Me considero una persona tranquila y diligente.
                 </div>
             </div>
         </div>
@@ -74,10 +77,11 @@
                     <img src="images/Omar.jpeg" alt="Omar Rivera" style="width: 100%;">
                 </div>
                 <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Omar Harold Rivera Ticllacuri</h2>
+                    <h2 class="mdl-card__title-text" id="teamMember3Name">Omar Harold Rivera Ticllacuri</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    I am a Software Engineering student, 19 years old, currently in the fifth cycle of my career. I am a disciplined and responsible person when it comes to developing software and entertainment projects. I have experience in entertainment software development.             </div>
+                <div class="mdl-card__supporting-text" id="teamMember3Desc">
+                    Soy estudiante de Ingeniería de Software, tengo 19 años y actualmente estoy en el quinto ciclo de mi carrera. Soy una persona disciplinada y responsable cuando se trata de desarrollar software y proyectos de entretenimiento. Tengo experiencia en desarrollo de software de entretenimiento.
+                </div>
             </div>
         </div>
     </div>
@@ -89,10 +93,10 @@
                     <img src="images/Samuel.jpeg" alt="Samuel Elias Molina Asencios" style="width: 100%;">
                 </div>
                 <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Samuel Elias Molina Asencios</h2>
+                    <h2 class="mdl-card__title-text" id="teamMember4Name">Samuel Elias Molina Asencios</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    I am a 7th-cycle student in the Software Engineering program. I really enjoy art and sports. In my free time, I play the piano or go swimming.
+                <div class="mdl-card__supporting-text" id="teamMember4Desc">
+                    Soy estudiante de 7mo ciclo en el programa de Ingeniería de Software. Disfruto mucho del arte y los deportes. En mi tiempo libre, toco el piano o voy a nadar.
                 </div>
             </div>
         </div>
@@ -102,10 +106,10 @@
                     <img src="images/Rodrigo.png" alt="Rodrigo Liberato Saldaña" style="width: 100%;">
                 </div>
                 <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Rodrigo Liberato Saldaña</h2>
+                    <h2 class="mdl-card__title-text" id="teamMember5Name">Rodrigo Liberato Saldaña</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                    I am a 6th-cycle student in the Software Engineering program. I am a person who values effort and tries to support in every possible way.
+                <div class="mdl-card__supporting-text" id="teamMember5Desc">
+                    Soy estudiante de 6to ciclo en el programa de Ingeniería de Software. Soy una persona que valora el esfuerzo y trata de apoyar en cada posible manera.
                 </div>
             </div>
         </div>
@@ -114,21 +118,21 @@
 
 <!-- Contact Us Section -->
 <section class="contact-section" id="contact" aria-labelledby="contactTitle">
-    <h2 id="contactTitle">Contact Us</h2>
+    <h2 id="contactTitle">Contáctanos</h2>
     <form class="contact-form" aria-label="Contact form" method="post">
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required aria-required="true">
         </div>
         <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required aria-required="true">
+            <label for="email">Dirección de Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required aria-required="true">
         </div>
         <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write your message" required aria-required="true"></textarea>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje" required aria-required="true"></textarea>
         </div>
-        <button type="submit" class="submit-btn" aria-label="Send Message">Send Message</button>
+        <button type="submit" class="submit-btn" aria-label="Enviar Mensaje">Enviar Mensaje</button>
     </form>
 </section>
 
@@ -139,14 +143,106 @@
             <img src="images/parkingnow.png" alt="PARKINGNOW logo">
         </div>
         <div class="footer-menu">
-            <a href="About.html" class="hover">About</a>
-            <a href="Caracteristicas.html" class="hover">Features</a>
+            <a href="About.html" class="hover" id="footerAbout">Acerca de</a>
+            <a href="Caracteristicas.html" class="hover" id="footerFeatures">Características</a>
         </div>
     </div>
-    <div class="footer-bottom" aria-label="Copyright Information">
-        &copy; 2024 PARKINGNOW. All rights reserved.
+    <div class="footer-bottom" aria-label="Copyright Information" id="footerCopyright">
+        &copy; 2024 PARKINGNOW. Todos los derechos reservados.
     </div>
 </footer>
+
+<!-- Custom JS for Language Switching -->
+<script>
+    let currentLanguage = "es";
+
+    const translations = {
+        en: {
+            "aboutTitle": "Our Team",
+            "teamMember1Name": "Diego Ulises Soto Quispe",
+            "teamMember1Desc": "I am a 5th-cycle student in the Software Engineering program. I am responsible in the tasks assigned to me and punctual with deadlines. Outside of programming, I enjoy playing basketball, going for walks, playing video games, and riding my bike.",
+            "teamMember2Name": "Diego Alonso Cacho Seminario",
+            "teamMember2Desc": "My name is Diego Cacho, and I am 19 years old. I am currently in the 5th cycle of my Software Engineering career at UPC. I consider myself a calm and diligent person.",
+            "teamMember3Name": "Omar Harold Rivera Ticllacuri",
+            "teamMember3Desc": "I am a Software Engineering student, 19 years old, currently in the fifth cycle of my career. I am a disciplined and responsible person when it comes to developing software and entertainment projects. I have experience in entertainment software development.",
+            "teamMember4Name": "Samuel Elias Molina Asencios",
+            "teamMember4Desc": "I am a 7th-cycle student in the Software Engineering program. I really enjoy art and sports. In my free time, I play the piano or go swimming.",
+            "teamMember5Name": "Rodrigo Liberato Saldaña",
+            "teamMember5Desc": "I am a 6th-cycle student in the Software Engineering program. I am a person who values effort and tries to support in every possible way.",
+            "contactTitle": "Contact Us",
+            "nameLabel": "Name",
+            "emailLabel": "Email Address",
+            "messageLabel": "Message",
+            "sendMessageButton": "Send Message",
+            "toolbarHome": "Home",
+            "toolbarFeatures": "Features",
+            "toolbarReserveSpace": "Reserve Space",
+            "toolbarContactUs": "Contact Us",
+            "footerAbout": "About",
+            "footerFeatures": "Features",
+            "footerCopyright": "© 2024 PARKINGNOW. All rights reserved."
+        },
+        es: {
+            "aboutTitle": "Nuestro Equipo",
+            "teamMember1Name": "Diego Ulises Soto Quispe",
+            "teamMember1Desc": "Soy estudiante de 5to ciclo en el programa de Ingeniería de Software. Soy responsable en las tareas que se me asignan y puntual con los plazos. Fuera de la programación, disfruto jugar baloncesto, salir a caminar, jugar videojuegos y andar en bicicleta.",
+            "teamMember2Name": "Diego Alonso Cacho Seminario",
+            "teamMember2Desc": "Me llamo Diego Cacho y tengo 19 años. Actualmente estoy en el 5to ciclo de mi carrera de Ingeniería de Software en la UPC. Me considero una persona tranquila y diligente.",
+            "teamMember3Name": "Omar Harold Rivera Ticllacuri",
+            "teamMember3Desc": "Soy estudiante de Ingeniería de Software, tengo 19 años y actualmente estoy en el quinto ciclo de mi carrera. Soy una persona disciplinada y responsable cuando se trata de desarrollar software y proyectos de entretenimiento. Tengo experiencia en desarrollo de software de entretenimiento.",
+            "teamMember4Name": "Samuel Elias Molina Asencios",
+            "teamMember4Desc": "Soy estudiante de 7mo ciclo en el programa de Ingeniería de Software. Disfruto mucho del arte y los deportes. En mi tiempo libre, toco el piano o voy a nadar.",
+            "teamMember5Name": "Rodrigo Liberato Saldaña",
+            "teamMember5Desc": "Soy estudiante de 6to ciclo en el programa de Ingeniería de Software. Soy una persona que valora el esfuerzo y trata de apoyar en cada posible manera.",
+            "contactTitle": "Contáctanos",
+            "nameLabel": "Nombre",
+            "emailLabel": "Dirección de Correo Electrónico",
+            "messageLabel": "Mensaje",
+            "sendMessageButton": "Enviar Mensaje",
+            "toolbarHome": "Inicio",
+            "toolbarFeatures": "Características",
+            "toolbarReserveSpace": "Reservar Espacio",
+            "toolbarContactUs": "Contáctanos",
+            "footerAbout": "Acerca de",
+            "footerFeatures": "Características",
+            "footerCopyright": "© 2024 PARKINGNOW. Todos los derechos reservados."
+        }
+    };
+
+    document.getElementById('languageSwitcher').addEventListener('click', () => {
+        currentLanguage = currentLanguage === "es" ? "en" : "es";
+        document.getElementById('aboutTitle').innerText = translations[currentLanguage].aboutTitle;
+        document.getElementById('teamMember1Name').innerText = translations[currentLanguage].teamMember1Name;
+        document.getElementById('teamMember1Desc').innerText = translations[currentLanguage].teamMember1Desc;
+        document.getElementById('teamMember2Name').innerText = translations[currentLanguage].teamMember2Name;
+        document.getElementById('teamMember2Desc').innerText = translations[currentLanguage].teamMember2Desc;
+        document.getElementById('teamMember3Name').innerText = translations[currentLanguage].teamMember3Name;
+        document.getElementById('teamMember3Desc').innerText = translations[currentLanguage].teamMember3Desc;
+        document.getElementById('teamMember4Name').innerText = translations[currentLanguage].teamMember4Name;
+        document.getElementById('teamMember4Desc').innerText = translations[currentLanguage].teamMember4Desc;
+        document.getElementById('teamMember5Name').innerText = translations[currentLanguage].teamMember5Name;
+        document.getElementById('teamMember5Desc').innerText = translations[currentLanguage].teamMember5Desc;
+        document.getElementById('contactTitle').innerText = translations[currentLanguage].contactTitle;
+        document.querySelector('label[for="name"]').innerText = translations[currentLanguage].nameLabel;
+        document.querySelector('label[for="email"]').innerText = translations[currentLanguage].emailLabel;
+        document.querySelector('label[for="message"]').innerText = translations[currentLanguage].messageLabel;
+        document.querySelector('.submit-btn').innerText = translations[currentLanguage].sendMessageButton;
+
+        // Change toolbar text
+        document.getElementById('toolbarHome').innerText = translations[currentLanguage].toolbarHome;
+        document.getElementById('toolbarFeatures').innerText = translations[currentLanguage].toolbarFeatures;
+        document.getElementById('toolbarReserveSpace').innerText = translations[currentLanguage].toolbarReserveSpace;
+        document.getElementById('toolbarContactUs').innerText = translations[currentLanguage].toolbarContactUs;
+
+        // Change footer menu text
+        document.querySelector('.footer-menu a[href="About.html"]').innerText = translations[currentLanguage].footerAbout;
+        document.querySelector('.footer-menu a[href="Caracteristicas.html"]').innerText = translations[currentLanguage].footerFeatures;
+        document.querySelector('.footer-bottom').innerText = translations[currentLanguage].footerCopyright;
+
+        // Change button text
+        document.getElementById('languageSwitcher').innerText = currentLanguage === "es" ? "English" : "Español";
+    });
+</script>
 
 </body>
 
