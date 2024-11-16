@@ -28,11 +28,11 @@
 
 <div id="chatBox" class="card-panel chat-box" aria-live="polite">
     <div class="chat-header">
-        <span data-i18n="chatTitle">Chat</span>
+        <span data-i18n="chatTitle" aria-label="Chat Header">Chat</span>
         <button id="closeChat" class="close-button btn-flat" aria-label="Close chat window">&times;</button>
     </div>
     <div id="chat-container">
-        <div id="messages" class="center-align" data-i18n="chatHelp">How can I help you?</div>
+        <div id="messages" class="center-align" data-i18n="chatHelp" aria-label="Chat Help">How can I help you?</div>
         <div id="options" class="center">
             <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('parkingAvailability')" data-i18n="parkingAvailability" aria-label="Check parking availability">Parking availability</button>
             <button class="btn waves-effect waves-light yellow darken-1" onclick="userChoice('howToBook')" data-i18n="howToBook" aria-label="Learn how to book a parking space">How to book a space?</button>
@@ -237,14 +237,12 @@
     <div class="row">
         <div class="col s12 m6 center-align">
             <div class="video-container">
-                <!-- Título del video "About the Team" -->
                 <h5 style="color: #ffeb3b; font-size: 1.5em; margin-bottom: 10px;" aria-label="About the team video">About the Team</h5>
                 <iframe width="85%" height="240" src="https://www.youtube.com/embed/LfNNbFz9acg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="Watch about the team video"></iframe>
             </div>
         </div>
         <div class="col s12 m6 center-align">
             <div class="video-container">
-                <!-- Título del video "About the Product" -->
                 <h5 style="color: #ffeb3b; font-size: 1.5em; margin-bottom: 10px;" aria-label="About the product video">About the Product</h5>
                 <iframe width="85%" height="240" src="https://www.youtube.com/embed/B2WqUC0J8u0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="Watch about the product video"></iframe>
             </div>
@@ -287,7 +285,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container" style="text-align: center;">
-            <p data-i18n="footerRights" aria-label="All rights reserved for ParkingNow">© 2024 PARKINGNOW. All rights reserved.</p>
+            <p data-i18n="footerSocial" aria-label="All rights reserved for ParkingNow">© 2024 PARKINGNOW. All rights reserved.</p>
         </div>
     </div>
 </footer>
