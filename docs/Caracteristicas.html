@@ -19,7 +19,7 @@
 
 <body>
     <section class="Banner">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Barra de navegación principal">
             <div class="logo">
                 <a href="#" aria-label="Página de inicio"><img src="images/parkingnow.png" alt="PARKINGNOW" class="ParkingNow_Logo"></a>
             </div>
@@ -28,8 +28,8 @@
                 <a href="Caracteristicas.html" class="hover" aria-label="Ver características" id="toolbarFeatures">Características</a>
                 <a href="#Mision" class="hover" id="btnMision" aria-label="Ver misión" id="toolbarMission">Misión</a>
                 <a href="#Vision" class="hover" id="btnVision" aria-label="Ver visión" id="toolbarVision">Visión</a>
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="hover dropdown-toggle" aria-haspopup="true" aria-expanded="false">Reservar Espacio</a>
+                <div class="dropdown" aria-label="Menú de reserva de espacio">
+                    <a href="javascript:void(0)" class="hover dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Abrir menú para reservar espacio">Reservar Espacio</a>
                     <div class="dropdown-menu" aria-label="Opciones de reserva de espacio">
                         <a href="reserve-lima" class="hover" aria-label="Reservar un espacio en Lima">Lima</a>
                         <a href="reserve-arequipa" class="hover" aria-label="Reservar un espacio en Arequipa">Arequipa</a>
@@ -41,7 +41,7 @@
             </div>
             <!-- Language Switcher Button -->
             <div>
-                <button id="languageSwitcher" class="btn grey darken-3 white-text" style="margin-left: 15px; padding: 10px; border: none; cursor: pointer;">English</button>
+                <button id="languageSwitcher" class="btn grey darken-3 white-text" style="margin-left: 15px; padding: 10px; border: none; cursor: pointer;" aria-label="Cambiar idioma a inglés">English</button>
             </div>
         </nav>
     </section>
@@ -49,8 +49,8 @@
     <section class="Introduction">
         <div class="container1">
             <div class="content">
-                <h1 id="aboutTitle">Características de <span class="success">PARKINGNOW</span></h1>
-                <p id="introduction">
+                <h1 id="aboutTitle" aria-label="Características de PARKINGNOW">Características de <span class="success">PARKINGNOW</span></h1>
+                <p id="introduction" aria-label="Descripción de las características de PARKINGNOW">
                     PARKINGNOW es una startup tecnológica enfocada en proporcionar una solución integral para el estacionamiento en tiempo real. Nuestra plataforma te permite reservar y pagar espacios utilizando la ubicación geográfica y sensores infrarrojos para gestionar la disponibilidad de manera automatizada y eficiente.
                 </p>
             </div>
@@ -63,8 +63,8 @@
     <section id="Mision" class="Mision">
         <div class="container2">
             <div class="content2">
-                <h1 id="missionTitle">Misión de <span class="success">PARKINGNOW</span></h1>
-                <p id="missionDescription">
+                <h1 id="missionTitle" aria-label="Misión de PARKINGNOW">Misión de <span class="success">PARKINGNOW</span></h1>
+                <p id="missionDescription" aria-label="Descripción de la misión">
                     Actuar como un enlace entre conductores y propietarios, mejorando la experiencia de estacionamiento con tecnología eficiente.
                 </p>
             </div>
@@ -77,8 +77,8 @@
     <section id="Vision" class="Vision">
         <div class="container2">
             <div class="content2">
-                <h1 id="visionTitle">Visión de <span class="success">PARKINGNOW</span></h1>
-                <p id="visionDescription">
+                <h1 id="visionTitle" aria-label="Visión de PARKINGNOW">Visión de <span class="success">PARKINGNOW</span></h1>
+                <p id="visionDescription" aria-label="Descripción de la visión">
                     Actuar como un enlace entre conductores y propietarios, mejorando la experiencia de estacionamiento con tecnología eficiente.
                 </p>
             </div>
@@ -92,7 +92,7 @@
         <img src="images/Banner_1.jpg" class="object-contain" alt="banner" aria-label="Banner promocional">
     </section>
 
-    <footer class="footer-section">
+    <footer class="footer-section" aria-label="Pie de página">
         <div class="footer-content">
             <div class="footer-logo" href="index.html">
                 <a href="index.html" aria-label="Página de inicio"><img src="images/parkingnow.png" alt="PARKINGNOW" class="h-10"></a>
@@ -103,7 +103,7 @@
                 <a href="About.html" class="hover" aria-label="Contáctanos" id="footerContact">Contáctanos</a>
             </div>
         </div>
-        <div class="footer-bottom" id="footerCopyright">
+        <div class="footer-bottom" id="footerCopyright" aria-label="Derechos de autor">
             &copy; 2024 PARKINGNOW. Todos los derechos reservados.
         </div>
     </footer>
